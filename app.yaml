@@ -1,0 +1,7 @@
+runtime: nodejs18
+instance_class: F1
+automatic_scaling:
+  max_instances: 1
+env_variables:
+  # Recuerda configurar esto en tu panel de Google Cloud o aquí antes de desplegar
+  API_KEY: "TU_API_KEY_AQUI"
