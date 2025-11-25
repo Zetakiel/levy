@@ -10,7 +10,7 @@ export default defineConfig(({ mode }) => {
     plugins: [react()],
     define: {
       // Prevents crash if API_KEY is missing during build, defaults to empty string
-      'process.env.API_KEY': JSON.stringify(env.API_KEY || '')
+      'import.meta.env.VITE_GEMINI_API_KEY': JSON.stringify(env.API_KEY || '')
     },
     server: {
       host: '0.0.0.0',
